@@ -32,5 +32,13 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Lint with black
+    - run: black --check .
+    - name: If needed, commit black changes to a new pull request
+      if: failure()
       run: |
-        black *.py
+        black .
+        git config --global user.name github-actions
+        git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'          
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        git commit -am "fixup! Format Python code with psf/black push"
+        git push --force origin HEAD:$GITHUB_REF
