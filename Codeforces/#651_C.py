@@ -5,12 +5,11 @@ import statistics
 import itertools
 from functools import reduce
 
-def find_divisor(n):
-    l = n//2 if n//2 > 3 else n
-    for i in range(3,l+ 1,2):
-        if n% i == 0 and i % 2 !=0:
-            return i
-    return None
+def ip(num):
+    for i in range(2,int(math.sqrt(num))+1):
+        if num%i == 0:
+            return False
+    return True
 
     
 def input_list():
@@ -20,27 +19,22 @@ def input_list():
 
 
 tc = int(input())
+ash, faf = "Ashishgup","FastestFinger"
 for _ in range(tc):
     n = int(input())
-    cnt = 1
     if n == 1:
-        continue
-    elif n==2:
-        continue
+        print(faf)
         
-    while n > 1:
-        lll = find_divisor(n)
-        if lll:
-            n= n//lll
-            cnt+=1
-        else:
-            n -=1
-            cnt+=1
-    if cnt%2 != 0:
-        print("FastestFinger")
+    elif n==2:
+        print(ash)
+    elif n%2==1:
+        print(ash)
+    elif not n&(n-1):
+        print(faf)        
+    elif ip(n//2):
+        print(faf)
     else:
-        print("Ashishgup")
-    
+        print(ash)
     
 
     
