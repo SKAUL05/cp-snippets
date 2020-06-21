@@ -11,11 +11,10 @@ def ip(num):
             return False
     return True
 
-    
+
 def input_list():
     ll = list(map(int, input().split()))
     return ll
-
 
 
 tc = int(input())
@@ -35,6 +34,4 @@ for _ in range(tc):
         print(faf)
     else:
         print(ash)
-    
-
     
