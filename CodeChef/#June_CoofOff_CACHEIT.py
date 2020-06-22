@@ -19,7 +19,7 @@ def input_list():
 
 tc = int(input())
 for _ in range(tc):
-    n,b,m = map(int,input().split())
+    n, b, m = map(int, input().split())
     x = list(range(n))
     arr = input_list()
     f = 0
@@ -36,9 +36,9 @@ for _ in range(tc):
             else:
                 l = arr[i] - (arr[i] % b)
                 h = l + b
-            ci = [l,h-1]
+            ci = [l, h - 1]
         elif not (ci[0] <= arr[i] <= ci[1]):
-            f +=1
+            f += 1
             if arr[i] < b:
                 l = 0
                 h = b
@@ -48,8 +48,8 @@ for _ in range(tc):
             else:
                 l = arr[i] - (arr[i] % b)
                 h = l + b
-            ci = [l,h-1]
+            ci = [l, h - 1]
         elif ci[0] <= arr[i] <= ci[1]:
             pass
-            
+
     print(f)
