@@ -19,21 +19,21 @@ def input_list():
 
 tc = int(input())
 for _ in range(tc):
-    num,fr = map(int,input().split())
-    nlist = sorted(input_list(),reverse = True)
+    num, fr = map(int, input().split())
+    nlist = sorted(input_list(), reverse=True)
     frlist = sorted(input_list())
-    
+
     su = 0
     for i in range(fr):
         su += nlist[i]
-        if frlist[i] ==1:
+        if frlist[i] == 1:
             su += nlist[i]
 
     cc = fr
     for i in range(fr):
-        frlist[i] -=1
-        if frlist[i]>0:
-            su += nlist[cc+frlist[i]-1]
-            cc+=frlist[i]
+        frlist[i] -= 1
+        if frlist[i] > 0:
+            su += nlist[cc + frlist[i] - 1]
+            cc += frlist[i]
 
     print(su)
