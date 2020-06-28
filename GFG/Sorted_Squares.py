@@ -12,9 +12,11 @@ import itertools
 import time
 from datetime import datetime
 
+
 def input_list():
     ll = list(map(int, input().split(" ")))
     return ll
+
 
 def time_calculation(fn):
     def calculate(*args, **kwargs):
@@ -22,52 +24,53 @@ def time_calculation(fn):
         output = fn(*args, **kwargs)
         print(f"Time Taken {datetime.now() - start}")
         return output
+
     return calculate
 
-def square_sort(arr,n):
+
+def square_sort(arr, n):
     find = 0
     for find in range(n):
         if arr[find] >= 0:
             break
 
-    first_half = find-1
+    first_half = find - 1
     second_half = find
     final = [0] * n
     index = 0
-    while (first_half >= 0 and second_half < n):
-        if ( arr[first_half] * arr[first_half] < arr[second_half] * arr[second_half]):
+    while first_half >= 0 and second_half < n:
+        if arr[first_half] * arr[first_half] < arr[second_half] * arr[second_half]:
             final[index] = arr[first_half] * arr[first_half]
             first_half -= 1
         else:
             final[index] = arr[second_half] * arr[second_half]
-            second_half +=1
+            second_half += 1
 
-        index +=1
-    while (first_half >= 0):
+        index += 1
+    while first_half >= 0:
         final[index] = arr[first_half] * arr[first_half]
         first_half -= 1
-        index +=1
-    while(second_half < n):
+        index += 1
+    while second_half < n:
         final[index] = arr[second_half] * arr[second_half]
-        second_half +=1
-        index +=1
+        second_half += 1
+        index += 1
     return final
+
 
 @time_calculation
 def main():
     arr = input_list()
     print("Before Sort...")
     for element in arr:
-        print(element, end = " ")
+        print(element, end=" ")
     print(" ")
-    arr = square_sort(arr,len(arr))
+    arr = square_sort(arr, len(arr))
     print("After Sort")
     for element in arr:
-        print(element, end = " ")
+        print(element, end=" ")
     print(" ")
+
 
 if __name__ == "__main__":
     main()
-    
-    
-    

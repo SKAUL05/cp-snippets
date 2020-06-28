@@ -12,9 +12,11 @@ import itertools
 import time
 from datetime import datetime
 
+
 def input_list():
     ll = list(map(int, input().split(" ")))
     return ll
+
 
 def time_calculation(fn):
     def calculate(*args, **kwargs):
@@ -22,6 +24,7 @@ def time_calculation(fn):
         output = fn(*args, **kwargs)
         print(f"Time Taken {datetime.now() - start}")
         return output
+
     return calculate
 
 
@@ -29,8 +32,6 @@ def time_calculation(fn):
 def main():
     print(" ")
 
+
 if __name__ == "__main__":
     main()
-    
-    
-    
