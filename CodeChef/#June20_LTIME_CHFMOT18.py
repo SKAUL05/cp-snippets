@@ -16,31 +16,28 @@ def input_list():
     ll = list(map(int, input().split(" ")))
     return ll
 
+
 tc = int(input())
 
 for _ in range(tc):
-    s,n = map(int,input().split())
+    s, n = map(int, input().split())
 
-    if s % n == 0 and s>=n:
-        print(s//n)
+    if s % n == 0 and s >= n:
+        print(s // n)
     elif s < n:
         if s == 1:
             print(1)
-        elif s%2 == 0:
+        elif s % 2 == 0:
             print(1)
         else:
             print(2)
     else:
-        l = s//n
-        x = s%n
+        l = s // n
+        x = s % n
         if x == 1:
-            l +=1
-        elif x %2 ==0:
-            l+=1
+            l += 1
+        elif x % 2 == 0:
+            l += 1
         else:
-            l +=2
+            l += 2
         print(l)
-            
-        
-    
-    
