@@ -15,16 +15,15 @@ def is_prime(num):
 def input_list():
     ll = list(map(int, input().split(" ")))
     return ll
+
+
 tc = int(input())
 
 for _ in range(tc):
-    x,y,n = map(int,input().split())
+    x, y, n = map(int, input().split())
     if n % x == y:
         print(n)
     else:
-        cc = (n-y)//x
-        f = (cc*x)+y
+        cc = (n - y) // x
+        f = (cc * x) + y
         print(f)
-        
-        
-        

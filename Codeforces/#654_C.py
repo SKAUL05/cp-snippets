@@ -15,6 +15,8 @@ def is_prime(num):
 def input_list():
     ll = list(map(int, input().split(" ")))
     return ll
+
+
 tc = int(input())
 
 for _ in range(tc):
@@ -24,8 +26,8 @@ for _ in range(tc):
     ss = 0
     for i in s:
         if i == "(":
-            ss+=1
+            ss += 1
         elif i == ")":
-            ss -=1
-        m = min(m,ss)
-    print(-1*m)
+            ss -= 1
+        m = min(m, ss)
+    print(-1 * m)
