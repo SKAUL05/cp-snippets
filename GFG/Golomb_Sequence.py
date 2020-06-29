@@ -23,14 +23,14 @@ def time_calculation(fn):
 
     return calculate
 
-def golamb(num):
-    arr = [0] * (num+1)
-    arr[1] = 1
-    for r in range(2,num+1):
-        arr[r] = arr[r - arr[arr[r-1]]] + 1
 
-    return arr[1:num+1]
-    
+def golamb(num):
+    arr = [0] * (num + 1)
+    arr[1] = 1
+    for r in range(2, num + 1):
+        arr[r] = arr[r - arr[arr[r - 1]]] + 1
+
+    return arr[1 : num + 1]
 
 
 @time_calculation
@@ -40,8 +40,7 @@ def main():
     print(arr)
     return
     for i in arr:
-        print(i,end = " ")
-    
+        print(i, end=" ")
 
 
 if __name__ == "__main__":
