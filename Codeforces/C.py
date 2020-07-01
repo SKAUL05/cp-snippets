@@ -19,7 +19,8 @@ def input_list():
 tc = int(input())
 
 for _ in range(tc):
-    num = int(input())
-    l = num/2
-##    print(l)
-    print(math.ceil(l))
+    a,b,n,m = map(int,input().split())
+    if n<=a and m<=b and not (n==0 and a==0):
+        print("Yes")
+    else:
+        print("No")
