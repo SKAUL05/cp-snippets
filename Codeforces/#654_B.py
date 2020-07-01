@@ -16,12 +16,13 @@ def input_list():
     ll = list(map(int, input().split(" ")))
     return ll
 
+
 tc = int(input())
 
 for _ in range(tc):
-    n,r = map(int, input().split())
-    if r>=n:
-        ans = (n * (n-1)//2) + 1
+    n, r = map(int, input().split())
+    if r >= n:
+        ans = (n * (n - 1) // 2) + 1
     else:
-        ans = (r*(r+1))//2
+        ans = (r * (r + 1)) // 2
     print(ans)

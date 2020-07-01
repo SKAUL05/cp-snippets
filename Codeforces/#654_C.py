@@ -20,8 +20,8 @@ def input_list():
 tc = int(input())
 
 for _ in range(tc):
-    a,b,n,m = map(int,input().split())
-    if a+b < m+n or (m>min(a,b)):
+    a, b, n, m = map(int, input().split())
+    if a + b < m + n or (m > min(a, b)):
         print("No")
     else:
         print("Yes")
