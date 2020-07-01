@@ -16,10 +16,11 @@ def input_list():
     ll = list(map(int, input().split(" ")))
     return ll
 
+
 tc = int(input())
 
 for _ in range(tc):
     num = int(input())
-    l = num/2
-##    print(l)
+    l = num / 2
+    ##    print(l)
     print(math.ceil(l))
