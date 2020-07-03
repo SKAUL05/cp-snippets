@@ -22,6 +22,6 @@ for _ in range(tc):
     n = int(input())
     arr = input_list()
     ans = 0
-    for i in range(1,n):
-        ans += (abs(arr[i]-arr[i-1]) - 1)
+    for i in range(1, n):
+        ans += abs(arr[i] - arr[i - 1]) - 1
     print(ans)

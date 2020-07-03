@@ -16,17 +16,19 @@ def input_list():
     ll = list(map(int, input().split(" ")))
     return ll
 
+
 def find_sum(x):
     ss = 0
     for i in x:
         ss += int(i)
     return ss
 
+
 tc = int(input())
 for _ in range(tc):
     xy = int(input())
     l = 1
-    arr = [[0,"X","X","X","X","X","X","X"]]
+    arr = [[0, "X", "X", "X", "X", "X", "X", "X"]]
     for i in range(7):
         x = []
         for j in range(8):
@@ -39,12 +41,11 @@ for _ in range(tc):
         for j in range(len(arr[i])):
             if arr[i][j] != 0 and l < xy:
                 arr[i][j] = "."
-                l +=1
+                l += 1
             if l == xy:
                 break
-                
+
     for i in arr:
         for j in i:
-            print(j,end="")
+            print(j, end="")
         print("")
-            
