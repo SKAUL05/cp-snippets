@@ -28,7 +28,7 @@ tc = int(input())
 for _ in range(tc):
     xy = int(input())
     l = 1
-    arr = [[0, "X", "X", "X", "X", "X", "X", "X"]]
+    arr = [["O", "X", "X", "X", "X", "X", "X", "X"]]
     for i in range(7):
         x = []
         for j in range(8):
@@ -39,7 +39,7 @@ for _ in range(tc):
         if l == xy:
             break
         for j in range(len(arr[i])):
-            if arr[i][j] != 0 and l < xy:
+            if arr[i][j] != "0" and l < xy:
                 arr[i][j] = "."
                 l += 1
             if l == xy:
