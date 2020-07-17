@@ -16,6 +16,7 @@ def input_list():
     lll = list(map(int, input().split(" ")))
     return lll
 
+
 tc = int(input())
 for _ in range(tc):
     n = int(input())
@@ -23,18 +24,10 @@ for _ in range(tc):
     arr.sort()
     k = 0
     for i in range(n):
-        if arr[i] % 2 ==0:
-            k+=1
+        if arr[i] % 2 == 0:
+            k += 1
             break
     if k == 0:
         print("YES")
     else:
         print("NO")
-        
-        
-
-
-
-
-    
-            

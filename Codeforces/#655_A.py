@@ -16,12 +16,12 @@ def input_list():
     ll = list(map(int, input().split(" ")))
     return ll
 
+
 tc = int(input())
 
 for _ in range(tc):
     n = int(input())
     x = [1] * n
     for i in x:
-        print(i,end = " ")
+        print(i, end=" ")
     print(" ")
-        
