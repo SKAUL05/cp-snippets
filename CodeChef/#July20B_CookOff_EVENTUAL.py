@@ -15,6 +15,8 @@ def is_prime(num):
 def input_list():
     ll = list(map(int, input().split(" ")))
     return ll
+
+
 tc = int(input())
 
 for _ in range(tc):
@@ -26,10 +28,10 @@ for _ in range(tc):
         if i not in x:
             x[i] = 1
         else:
-            x[i] +=1
+            x[i] += 1
     c = False
-    for i,j in x.items():
-        if j % 2!=0:
+    for i, j in x.items():
+        if j % 2 != 0:
             c = True
             break
     if c:

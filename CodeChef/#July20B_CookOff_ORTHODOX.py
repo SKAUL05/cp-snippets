@@ -16,28 +16,28 @@ def input_list():
     ll = list(map(int, input().split(" ")))
     return ll
 
+
 tc = int(input())
 for _ in range(tc):
     n = int(input())
     import copy
+
     arr = input_list()
     dird = {}
     c = False
     for i in arr:
         if i not in dird:
             dird[i] = 1
-        
+
     ans = arr[0]
-    for i in range(1,n):
-        ans|= arr[i]
+    for i in range(1, n):
+        ans |= arr[i]
         if ans in dird:
             c = True
             break
         else:
-            dird[ans] =1
+            dird[ans] = 1
     if c:
         print("NO")
     else:
         print("YES")
-  
-    
