@@ -17,7 +17,6 @@ def input_list():
     return ll
 
 
-
 tc = int(input())
 for _ in range(tc):
     n = int(input())
@@ -28,5 +27,5 @@ for _ in range(tc):
             x.append(i)
 
     for i in x:
-        print(i,end = " ")
+        print(i, end=" ")
     print(" ")

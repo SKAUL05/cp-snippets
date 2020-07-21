@@ -20,12 +20,12 @@ def input_list():
 tc = int(input())
 for _ in range(tc):
     n = int(input())
-    v = (4*n)-1
-    v1,v2 = map(int,input().split())
-    xx,yy = v1,v2
-    for i in range(1,v):
-        x,y = map(int,input().split())
+    v = (4 * n) - 1
+    v1, v2 = map(int, input().split())
+    xx, yy = v1, v2
+    for i in range(1, v):
+        x, y = map(int, input().split())
         xx = xx ^ x
         yy = yy ^ y
 
-    print(xx,yy)
+    print(xx, yy)

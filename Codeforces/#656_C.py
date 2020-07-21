@@ -17,23 +17,21 @@ def input_list():
     return ll
 
 
-
 tc = int(input())
 for _ in range(tc):
     n = int(input())
     arr = input_list()
     x = arr[::-1]
-    
+
     c = 0
     l = n
-    for i in range(1,n):
+    for i in range(1, n):
         if c == 0:
-            if x[i] < x[i-1]:
-                c+=1
+            if x[i] < x[i - 1]:
+                c += 1
         if c == 1:
-            if x[i] > x[i-1]:
+            if x[i] > x[i - 1]:
                 break
-        l -=1
-        
-    print(l-1)
-    
+        l -= 1
+
+    print(l - 1)
