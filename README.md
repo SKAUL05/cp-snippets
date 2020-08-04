@@ -5,3 +5,5 @@ Code Snippets contains solutions of online programming contests.
 - Codechef
 - Codeforces
 - GeeksForGeeks
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/SKAUL05)  [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=104)](https://github.com/SKAUL05) <br>
