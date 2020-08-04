@@ -13,7 +13,7 @@ Languages Used:
 
 ## License
 
-**MIT &copy; [Sarath Kaul](https://github.com/vinitshahdeo/cp-snippets/blob/master/LICENSE)**
+**MIT &copy; [Sarath Kaul](https://github.com/SKAUL05/cp-snippets/blob/master/LICENSE)**
 
 [![GitHub license](https://img.shields.io/github/license/SKAUL05/cp-snippets.svg?style=social&logo=github)](https://github.com/SKAUL05/cp-snippets/blob/master/LICENSE)
 
