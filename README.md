@@ -6,7 +6,7 @@ Code Snippets contains solutions of online programming contests held on various 
 - Codeforces
 - GeeksForGeeks
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/SKAUL05)  [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=104)](https://github.com/SKAUL05) <br>
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github)](https://github.com/SKAUL05)  [![Open Source Love](https://img.shields.io/badge/Open-Source-yellowgreen.svg?style=for-the-badge&logo=github)](https://github.com/SKAUL05) <br>
 
 Languages Used:
 - Python
