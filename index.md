@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+# <h1 align="center"> Code Snippets </h1>
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/SKAUL05/cp-snippets?logo=github)](https://github.com/SKAUL05/cp-snippets/commits/master) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SKAUL05/cp-snippets.svg?logo=github&style=social)](https://github.com/SKAUL05/) [![GitHub last commit](https://img.shields.io/github/last-commit/SKAUL05/cp-snippets.svg?style=social&logo=git)](https://github.com/SKAUL05/) [![GitHub stars](https://img.shields.io/github/stars/SKAUL05/cp-snippets.svg?style=social)](https://github.com/SKAUL05/cp-snippets/stargazers) [![GitHub forks](https://img.shields.io/github/forks/SKAUL05/cp-snippets.svg?style=social&logo=git)](https://github.com/SKAUL05/cp-snippets/network) ![Test Black & Push](https://github.com/SKAUL05/cp-snippets/workflows/Test%20Black%20&%20Push/badge.svg) ![Python Lint](https://github.com/SKAUL05/cp-snippets/workflows/Python%20Lint/badge.svg)
 
-You can use the [editor on GitHub](https://github.com/SKAUL05/cp-snippets/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Code Snippets contains solutions of online programming contests held on various platforms.
+- Codechef
+- Codeforces
+- GeeksForGeeks
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github)](https://github.com/SKAUL05)  [![Open Source Love](https://img.shields.io/badge/Open-Source-yellowgreen.svg?style=for-the-badge&logo=github)](https://github.com/SKAUL05) <br>
 
-### Markdown
+Languages Used:
+- Python
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## License
 
-```markdown
-Syntax highlighted code block
+**MIT &copy; [Sarath Kaul](https://github.com/SKAUL05/cp-snippets/blob/master/LICENSE)**
 
-# Header 1
-## Header 2
-### Header 3
+[![GitHub license](https://img.shields.io/github/license/SKAUL05/cp-snippets.svg?style=social&logo=github)](https://github.com/SKAUL05/cp-snippets/blob/master/LICENSE)
 
-- Bulleted
-- List
+## ➤ Author
 
-1. Numbered
-2. List
+👤 **Sarath Kaul**
 
-**Bold** and _Italic_ and `Code` text
+- Linkedin: [skaul05](https://www.linkedin.com/in/skaul05/)
+- Github: [@skaul05](https://github.com/skaul05)
+- Medium: [@kaul.sarath](https://medium.com/@kaul.sarath)
 
-[Link](url) and ![Image](src)
-```
+## ➤ Show your support
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Give a ⭐️ if this project helped you!
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SKAUL05/cp-snippets/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+---
