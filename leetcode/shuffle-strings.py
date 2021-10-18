@@ -3,3 +3,4 @@ class Solution:
         d = {indices[i]: s[i] for i in range(len(indices))}
         print(d)
         return "".join(d[i] for i in range(len(indices)))
+
