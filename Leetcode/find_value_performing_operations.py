@@ -1,5 +1,6 @@
 from typing import List
 
+
 def final_value_after_operation(operations: List[str]) -> int:
     op = 0
     for operation in operations:
@@ -9,5 +10,6 @@ def final_value_after_operation(operations: List[str]) -> int:
             op += 1
     return op
 
+
 if __name__ == "__main__":
-    print(final_value_after_operation(["X--","--X","--X"]))
+    print(final_value_after_operation(["X--", "--X", "--X"]))
