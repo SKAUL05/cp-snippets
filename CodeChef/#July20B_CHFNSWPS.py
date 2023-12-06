@@ -7,15 +7,11 @@ from collections import defaultdict
 
 
 def is_prime(num):
-    for i in range(2, int(math.sqrt(num)) + 1):
-        if num % i == 0:
-            return False
-    return True
+    return all(num % i != 0 for i in range(2, int(math.sqrt(num)) + 1))
 
 
 def input_list():
-    ll = list(map(int, input().split(" ")))
-    return ll
+    return list(map(int, input().split(" ")))
 
 
 def def_value():
@@ -23,13 +19,13 @@ def def_value():
 
 
 tc = int(input())
+cc = 0
 for _ in range(tc):
     n = int(input())
     a = input_list()
     b = input_list()
     zzz = 1000000000000
     ans = 0
-    cc = 0
     aa, bb, d = defaultdict(def_value), defaultdict(def_value), defaultdict(def_value)
     xx, yy = [], []
     zz = False
@@ -69,7 +65,7 @@ for _ in range(tc):
                 yy.append(b[i])
         xx.sort()
         yy.sort(reverse=True)
-        if len(xx) == 0:
+        if not xx:
             print(0)
         else:
             for i in range(len(xx)):

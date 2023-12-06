@@ -6,15 +6,11 @@ import itertools
 
 
 def is_prime(num):
-    for i in range(2, int(math.sqrt(num)) + 1):
-        if num % i == 0:
-            return False
-    return True
+    return all(num % i != 0 for i in range(2, int(math.sqrt(num)) + 1))
 
 
 def input_list():
-    ll = list(map(int, input().split(" ")))
-    return ll
+    return list(map(int, input().split(" ")))
 
 
 tc = int(input())
@@ -29,11 +25,7 @@ for _ in range(tc):
             x[i] = 1
         else:
             x[i] += 1
-    c = False
-    for i, j in x.items():
-        if j % 2 != 0:
-            c = True
-            break
+    c = any(j % 2 != 0 for j in x.values())
     if c:
         print("NO")
     else:
