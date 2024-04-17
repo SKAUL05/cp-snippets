@@ -14,8 +14,7 @@ from datetime import datetime
 
 
 def input_list():
-    ll = list(map(int, input().split(" ")))
-    return ll
+    return list(map(int, input().split(" ")))
 
 
 def time_calculation(fn):

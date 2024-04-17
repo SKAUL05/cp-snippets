@@ -6,22 +6,15 @@ import itertools
 
 
 def is_prime(num):
-    for i in range(2, int(math.sqrt(num)) + 1):
-        if num % i == 0:
-            return False
-    return True
+    return all(num % i != 0 for i in range(2, int(math.sqrt(num)) + 1))
 
 
 def input_list():
-    ll = list(map(int, input().split(" ")))
-    return ll
+    return list(map(int, input().split(" ")))
 
 
 def find_sum(x):
-    ss = 0
-    for i in x:
-        ss += int(i)
-    return ss
+    return sum(int(i) for i in x)
 
 
 tc = int(input())
@@ -29,18 +22,16 @@ for _ in range(tc):
     xy = int(input())
     l = 1
     arr = [["O", "X", "X", "X", "X", "X", "X", "X"]]
-    for i in range(7):
-        x = []
-        for j in range(8):
-            x.append("X")
+    for _ in range(7):
+        x = ["X" for _ in range(8)]
         arr.append(x)
 
-    for i in range(len(arr)):
+    for item in arr:
         if l == xy:
             break
-        for j in range(len(arr[i])):
-            if arr[i][j] != "0" and l < xy:
-                arr[i][j] = "."
+        for j in range(len(item)):
+            if item[j] != "0" and l < xy:
+                item[j] = "."
                 l += 1
             if l == xy:
                 break

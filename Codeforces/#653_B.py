@@ -6,15 +6,11 @@ import itertools
 
 
 def is_prime(num):
-    for i in range(2, int(math.sqrt(num)) + 1):
-        if num % i == 0:
-            return False
-    return True
+    return all(num % i != 0 for i in range(2, int(math.sqrt(num)) + 1))
 
 
 def input_list():
-    ll = list(map(int, input().split(" ")))
-    return ll
+    return list(map(int, input().split(" ")))
 
 
 tc = int(input())
@@ -30,10 +26,10 @@ for _ in range(tc):
         x = 0
         while n > 1 and x < 6:
             if n % 6 == 0:
-                n = n // 6
+                n //= 6
                 x = 0
             else:
-                n = n * 2
+                n *= 2
                 x += 1
             c += 1
         if n == 1:

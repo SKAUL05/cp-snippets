@@ -6,15 +6,11 @@ import itertools
 
 
 def is_prime(num):
-    for i in range(2, int(math.sqrt(num)) + 1):
-        if num % i == 0:
-            return False
-    return True
+    return all(num % i != 0 for i in range(2, int(math.sqrt(num)) + 1))
 
 
 def input_list():
-    ll = list(map(int, input().split(" ")))
-    return ll
+    return list(map(int, input().split(" ")))
 
 
 tc = int(input())
@@ -41,12 +37,8 @@ while tc:
     if len(s) > ii + oo:
         cc = True
     ##    print(oo,ii,cc)
-    if cc:
-        rf = ["0"] * (oo + 1) + ["1"] * (ii)
-        rf = "".join(rf)
-    else:
-        rf = ["0"] * (oo) + ["1"] * (ii)
-        rf = "".join(rf)
+    rf = ["0"] * (oo + 1) + ["1"] * (ii) if cc else ["0"] * (oo) + ["1"] * (ii)
+    rf = "".join(rf)
     print(rf)
 
     tc -= 1
