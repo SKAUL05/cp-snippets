@@ -10,8 +10,7 @@ from datetime import datetime
 
 
 def input_list():
-    ll = list(map(int, input().split(" ")))
-    return ll
+    return list(map(int, input().split(" ")))
 
 
 def time_calculation(fn):
@@ -39,8 +38,6 @@ def main():
     arr = golamb(num)
     print(arr)
     return
-    for i in arr:
-        print(i, end=" ")
 
 
 if __name__ == "__main__":

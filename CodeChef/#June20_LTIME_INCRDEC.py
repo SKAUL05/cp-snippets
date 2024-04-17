@@ -7,15 +7,11 @@ from collections import Counter
 
 
 def is_prime(num):
-    for i in range(2, int(math.sqrt(num)) + 1):
-        if num % i == 0:
-            return False
-    return True
+    return all(num % i != 0 for i in range(2, int(math.sqrt(num)) + 1))
 
 
 def input_list():
-    ll = list(map(int, input().split(" ")))
-    return ll
+    return list(map(int, input().split(" ")))
 
 
 tc = int(input())
@@ -24,8 +20,7 @@ for _ in range(tc):
     n = int(input())
     arr = input_list()
     l = {}
-    x = list(set(arr))
-    x.sort()
+    x = sorted(set(arr))
     fl = False
     for i in arr:
         if i not in l:
@@ -44,11 +39,7 @@ for _ in range(tc):
         for i, j in l.items():
             print(i, end=" ")
             l[i] -= 1
-        ss = []
-        for i, j in l.items():
-            if j >= 1:
-                ss.append(i)
-
+        ss = [i for i, j in l.items() if j >= 1]
         ss = ss[::-1]
         for i in ss:
             print(i, end=" ")

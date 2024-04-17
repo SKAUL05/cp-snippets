@@ -6,21 +6,15 @@ import itertools
 
 
 def is_prime(num):
-    for i in range(2, int(math.sqrt(num)) + 1):
-        if num % i == 0:
-            return False
-    return True
+    return all(num % i != 0 for i in range(2, int(math.sqrt(num)) + 1))
 
 
 def input_list():
-    ll = list(map(int, input().split(" ")))
-    return ll
+    return list(map(int, input().split(" ")))
 
 
 def gcd(a, b):
-    if a == 0:
-        return b
-    return gcd(b % a, a)
+    return b if a == 0 else gcd(b % a, a)
 
 
 def lcm(a, b):
