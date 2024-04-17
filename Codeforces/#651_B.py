@@ -15,7 +15,7 @@ for _ in range(tc):
     n = int(input())
     arr = input_list()
     e, o = [], []
-    for i in range(0, len(arr)):
+    for i in range(len(arr)):
         if arr[i] % 2 == 0:
             e.append(i + 1)
         else:
