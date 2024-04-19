@@ -32,7 +32,11 @@ class Solution(object):
             directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
             for direction in directions:
                 new_row, new_col = direction[0] + r, direction[1] + c
-                if 0 <= new_row < len(mat) and 0 <= new_col < len(mat[0]) and mat[new_row][new_col] == -1:
+                if (
+                    0 <= new_row < len(mat)
+                    and 0 <= new_col < len(mat[0])
+                    and mat[new_row][new_col] == -1
+                ):
                     mat[new_row][new_col] = mat[r][c] + 1
                     dq.append((new_row, new_col))
         return mat
