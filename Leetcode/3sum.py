@@ -64,18 +64,21 @@ class Solution(object):
         if len(zero_set) >= 3:
             result.add((0, 0, 0))
 
-
         for i in range(len(negative_set)):
             for j in range(i + 1, len(negative_set)):
                 target = -1 * (negative_set[i] + negative_set[j])
                 if target in pos_check:
-                    result.add(tuple(sorted([negative_set[i], negative_set[j], target])))
+                    result.add(
+                        tuple(sorted([negative_set[i], negative_set[j], target]))
+                    )
 
         for i in range(len(positive_set)):
             for j in range(i + 1, len(positive_set)):
                 target = -1 * (positive_set[i] + positive_set[j])
                 if target in neg_check:
-                    result.add(tuple(sorted([positive_set[i], positive_set[j], target])))
+                    result.add(
+                        tuple(sorted([positive_set[i], positive_set[j], target]))
+                    )
 
         return result
 
