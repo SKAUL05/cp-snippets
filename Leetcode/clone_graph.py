@@ -72,4 +72,4 @@ class Solution(object):
         :type node: Node
         :rtype: Node
         """
-        self.helper(node,{})
+        self.helper(node, {})
