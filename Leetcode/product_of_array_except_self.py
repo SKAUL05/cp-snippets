@@ -1,4 +1,3 @@
-
 class Solution:
     def productExceptSelf(self, nums):
         res = []
@@ -15,5 +14,6 @@ class Solution:
 
         return res
 
+
 s = Solution()
-print(s.productExceptSelf([1,2,3,4]))
+print(s.productExceptSelf([1, 2, 3, 4]))
