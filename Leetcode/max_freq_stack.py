@@ -30,7 +30,10 @@ freqStack.pop();   // return 7, as 5 and 7 is the most frequent, but 7 is closes
 freqStack.pop();   // return 5, as 5 is the most frequent. The stack becomes [5,7,4].
 freqStack.pop();   // return 4, as 4, 5 and 7 is the most frequent, but 4 is closest to the top. The stack becomes [5,7].
 """
+
 from collections import defaultdict
+
+
 class FreqStack(object):
 
     def __init__(self):
@@ -46,7 +49,7 @@ class FreqStack(object):
         if self.frequency[val] > len(self.stack):
             self.stack.append([val])
         else:
-            self.stack[self.frequency[val]-1].append(val)
+            self.stack[self.frequency[val] - 1].append(val)
 
     def pop(self):
         """
@@ -55,8 +58,10 @@ class FreqStack(object):
         val = self.stack[-1].pop()
         if not self.stack[-1]:
             self.stack.pop()
-        self.frequency[val] -=1
+        self.frequency[val] -= 1
         return val
+
+
 # Your FreqStack object will be instantiated and called as such:
 obj = FreqStack()
 obj.push(5)
