@@ -27,6 +27,7 @@ medianFinder.addNum(3);    // arr[1, 2, 3]
 medianFinder.findMedian(); // return 2.0
 
 """
+
 import heapq
 
 
