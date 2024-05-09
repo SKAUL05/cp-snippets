@@ -35,7 +35,6 @@ from collections import defaultdict
 
 
 class FreqStack(object):
-
     def __init__(self):
         self.frequency = defaultdict(int)
         self.stack = []

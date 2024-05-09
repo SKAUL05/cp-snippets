@@ -32,7 +32,6 @@ import heapq
 
 
 class MedianFinder(object):
-
     def __init__(self):
         self.small = []  # Max Heap
         self.large = []  # Min Heap
