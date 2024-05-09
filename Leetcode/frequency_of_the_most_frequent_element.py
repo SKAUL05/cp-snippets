@@ -49,4 +49,4 @@ class Solution(object):
 
 s = Solution()
 print(s.maxFrequency([3, 9, 6], 2))
-print(s.maxFrequency([1,2,4], 5))
+print(s.maxFrequency([1, 2, 4], 5))

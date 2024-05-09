@@ -36,7 +36,7 @@ class Solution(object):
                 if nums[i] == 0:
                     k += 1
                 i += 1
-            max_length = max(max_length, (j-i+1))
+            max_length = max(max_length, (j - i + 1))
         return max_length
 
 
