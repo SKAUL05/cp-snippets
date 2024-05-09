@@ -54,7 +54,6 @@ class Node(object):
 
 
 class Solution(object):
-
     def helper(self, node, visited):
         if node is None:
             return node
