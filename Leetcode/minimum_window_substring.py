@@ -65,7 +65,7 @@ class Solution(object):
                     if chr_map[s[begin]] > 0:
                         counter += 1
                 begin += 1
-        return "" if min_length == n + 1 else s[head : head + min_length]
+        return "" if min_length == n + 1 else s[head: head + min_length]
 
 
 s = Solution()
