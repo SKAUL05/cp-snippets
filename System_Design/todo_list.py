@@ -111,8 +111,8 @@ class ToDoList(IToDoList):
             return self._extracted_from_completeTask_3(
                 task_id,
                 "delete",
-                'Task Deleted - ID ',
-                'Task Removed SuccessFully - ID ',
+                "Task Deleted - ID ",
+                "Task Removed SuccessFully - ID ",
             )
         return "Provided Task doesn't exist"
 
@@ -122,8 +122,8 @@ class ToDoList(IToDoList):
             return self._extracted_from_completeTask_3(
                 task_id,
                 "complete",
-                'Task Completed - ID ',
-                'Task Completed SuccessFully - ID ',
+                "Task Completed - ID ",
+                "Task Completed SuccessFully - ID ",
             )
         return "Provided Task doesn't exist"
 
