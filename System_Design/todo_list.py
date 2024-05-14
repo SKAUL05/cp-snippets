@@ -82,13 +82,9 @@ class ToDoList(IToDoList):
         if task.id in self.tasks:
             return "Error: Task with similar id already exists"
 
-        self.tasks[task.id] = task
-        self.log[str(uuid.uuid4())] = {
-            "action": "add",
-            "time": datetime.datetime.now(),
-            "logMessage": f"Task Added - ID {task.id}",
-        }
-        return f"Task Added SuccessFully - ID {task.id}"
+        return self._extracted_from_modifyTask_6(
+            task, "add", 'Task Added - ID ', 'Task Added SuccessFully - ID '
+        )
 
     def getTask(self, task_id):
 
@@ -96,15 +92,23 @@ class ToDoList(IToDoList):
 
     def modifyTask(self, task):
         if task.id in self.tasks:
-            self.tasks[task.id] = task
-            self.log[str(uuid.uuid4())] = {
-                "action": "update",
-                "time": datetime.datetime.now(),
-                "logMessage": f"Task Updated - ID {task.id}",
-            }
-            return f"Task Updated SuccessFully - ID {task.id}"
-
+            return self._extracted_from_modifyTask_6(
+                task,
+                "update",
+                'Task Updated - ID ',
+                'Task Updated SuccessFully - ID ',
+            )
         return "Provided Task doesn't exist"
+
+    # TODO Rename this here and in `addTask` and `modifyTask`
+    def _extracted_from_modifyTask_6(self, task, arg1, arg2, arg3):
+        self.tasks[task.id] = task
+        self.log[str(uuid.uuid4())] = {
+            "action": arg1,
+            "time": datetime.datetime.now(),
+            "logMessage": f"{arg2}{task.id}",
+        }
+        return f"{arg3}{task.id}"
 
     def removeTask(self, task_id):
         if task_id in self.tasks:
