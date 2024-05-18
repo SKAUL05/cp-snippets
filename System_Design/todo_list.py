@@ -83,7 +83,7 @@ class ToDoList(IToDoList):
             return "Error: Task with similar id already exists"
 
         return self._extracted_from_modifyTask_6(
-            task, "add", 'Task Added - ID ', 'Task Added SuccessFully - ID '
+            task, "add", "Task Added - ID ", "Task Added SuccessFully - ID "
         )
 
     def getTask(self, task_id):
@@ -95,8 +95,8 @@ class ToDoList(IToDoList):
             return self._extracted_from_modifyTask_6(
                 task,
                 "update",
-                'Task Updated - ID ',
-                'Task Updated SuccessFully - ID ',
+                "Task Updated - ID ",
+                "Task Updated SuccessFully - ID ",
             )
         return "Provided Task doesn't exist"
 
